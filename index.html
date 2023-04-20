@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--------------------METADATOS------------------------>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-----------------FIN METADATOS------------------------>
+    <!----------------------TITULO-------------------------->
+    <title>Trabajo Practico Integrador</title>
+    <!------------------FIN TITULO-------------------------->
+    <!----------------------LINKS--------------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
+    <link
+    rel="stylesheet"
+    href="style.css"/>
+    <!------------------FIN LINKS--------------------------->
+    <!----------------------SCRIPTS---------------------------->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+
+    <script src="script.js"></script>
+    <!------------------FIN SCRIPTS---------------------------->
+  </head>
+  <body class="container-md">
+    <header class="d-flex flex-column justify-content-center py-3 pt-4 mt-4 mb-4">
+      <!---------------NAVBAR------------------------->
+      <nav
+        id="menu-navegacion"
+        class="navbar navbar-expand-md fixed-top navbar-brand m-0"
+      >
+        <div class="container-md">
+          <a
+            class="navbar-brand"
+            href="#"
+            ><img
+              class="logo"
+              src="img/logo-2 limpio.png"
+              alt="Logo de la empresa"
+          /></a>
+          <button
+            class="navbar-toggler"
+            id="menu-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#productos"
+                  >Productos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#quienes-somos"
+                  >Quienes Somos?</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#equipo"
+                  >Equipo</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#contacto"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#opiniones"
+                  >Opiniones</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-----------------FIN NAVBAR--------------------------->
+      <!----------------- BANNER PRINCIPAL-------------------->
+      <div
+        id="banner-principal"
+        class="mt-3 mt-md-4 mt-xl-5 pt-0 d-flex justify-content-center align-items-center"
+      >
+        <!-- <img
+          class="w-100"
+          src="img/imagen-principal.jpg"
+          alt=""
+        /> -->
+        <div class="row">
+          <div class="col-md text-center">
+            <h1 class="display-1 fw-bolder">Conexión Total</h1>
+            <p class="fw-semibold">Un internet más rápido. Una nueva era de internet.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div
+        data-bs-spy="scroll"
+        data-bs-target="#menu-navegacion"
+      >
+      <!-------------- FIN BANNER PRINCIPAL----------------->
+      <!--------------PRIMERA SECCIÓN PRODUCTOS---------------->
+        <section
+          id="productos"
+          class="rounded-4"
+        >
+          <div class="px-2 py-3 p-sm-5 mb-4">
+            <div class="container-fluid">
+              <h2 class="fs-1 fw-bold text-center">Productos</h2>
+              <div class="scrolling-wrapper">
+                <!---------------------CARD UNO--------------------------> 
+                <div
+                  class="card my-3 mx-2"
+                  style="width: 18rem"
+                >
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="img/wifi.png"
+                      class="card-img-top w-25"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">150 MB</h5>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">subida de 130 MB</li>
+                    <li class="list-group-item">Bajada de 130 MB</li>
+                    <li class="list-group-item">Modem Fibra Optica + Wifi</li>
+                  </ul>
+                  <div class="card-body d-flex flex-column justify-content-center gap-2">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-contrato"
+                    >
+                      Contratar
+                    </button>
+                    <div class="text-center">
+                      <a
+                        href="#"
+                        class="card-link"
+                      >
+                        Ver mas
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-----------------FIN CARD UNO-------------------------->
+                <!---------------------CARD DOS-------------------------->   
+                <div
+                  class="card my-3 mx-2"
+                  style="width: 18rem"
+                >
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="img/wifi.png"
+                      class="card-img-top w-25"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">200 MB</h5>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">subida de 190 MB</li>
+                    <li class="list-group-item">Bajada de 190 MB</li>
+                    <li class="list-group-item">Modem Fibra Optica + Wifi</li>
+                  </ul>
+                  <div class="card-body d-flex flex-column justify-content-center gap-2">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-contrato"
+                    >
+                      Contratar
+                    </button>
+                    <div class="text-center">
+                      <a
+                        href="#"
+                        class="card-link"
+                      >
+                        Ver mas
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-----------------FIN CARD DOS-------------------------->
+                <!---------------------CARD TRES------------------------->
+                <div
+                  class="card my-3 mx-2"
+                  style="width: 18rem"
+                >
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="img/wifi.png"
+                      class="card-img-top w-25"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">300 MB</h5>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">subida de 290 MB</li>
+                    <li class="list-group-item">Bajada de 290 MB</li>
+                    <li class="list-group-item">Modem Fibra Optica + Wifi</li>
+                  </ul>
+                  <div class="card-body d-flex flex-column justify-content-center gap-2">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-contrato"
+                    >
+                      Contratar
+                    </button>
+                    <div class="text-center">
+                      <a
+                        href="#"
+                        class="card-link"
+                      >
+                        Ver mas
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-----------------FIN CARD TRES------------------------->
+                <!---------------------CARD CUATRO----------------------->
+                <div
+                  class="card my-3 mx-2"
+                  style="width: 18rem"
+                >
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="img/wifi.png"
+                      class="card-img-top w-25"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">500 MB</h5>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">subida de 495 MB</li>
+                    <li class="list-group-item">Bajada de 495 MB</li>
+                    <li class="list-group-item">Modem Fibra Optica + Wifi</li>
+                  </ul>
+                  <div class="card-body d-flex flex-column justify-content-center gap-2">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-contrato"
+                    >
+                      Contratar
+                    </button>
+                    <div class="text-center">
+                      <a
+                        href="#"
+                        class="card-link"
+                      >
+                        Ver mas
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-----------------FIN CARD CUATRO-------------------------->
+                <!---------------------CARD CINCO--------------------------->
+                <div
+                  class="card my-3 mx-2"
+                  style="width: 18rem"
+                >
+                  <div class="d-flex justify-content-center">
+                    <img
+                      src="img/wifi.png"
+                      class="card-img-top w-25"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title">1000 MB</h5>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">subida de 999 MB</li>
+                    <li class="list-group-item">Bajada de 999 MB</li>
+                    <li class="list-group-item">Modem Fibra Optica + Wifi</li>
+                  </ul>
+                  <div class="card-body d-flex flex-column justify-content-center gap-2">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-contrato"
+                    >
+                      Contratar
+                    </button>
+                    <div class="text-center">
+                      <a
+                        href="#"
+                        class="card-link"
+                      >
+                        Ver mas
+                      </a>
+                    </div>
+                    <!-----------------FIN CARD CINCO--------------------------->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!---------------------MODAL--------------------------->
+          <div
+            class="modal fade"
+            id="modal-contrato"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1
+                    class="modal-title fs-5"
+                    id="titulo-contrato"
+                  >
+                    Formulario de Contratación de Servicio
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div
+                  id="form-modal"
+                  class="modal-body"
+                >
+                  <form
+                    id="form-contrato"
+                    class="row justify-content-center align-content-center"
+                  >
+                    <div class="row">
+                      <fieldset class="mb-3">
+                        <legend>Datos</legend>
+                        <div class="row">
+                          <div class="col-12 col-sm-6">
+                            <div class="form-floating mb-3">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="contrato-apellido"
+                                id="contrato-apellido"
+                                placeholder="Altamirano; Altamirano Hernández"
+                                required
+                              />
+                              <label for="contrato-apellido">Apellido</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="form-floating mb-3">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="contrato-nombre"
+                                id="contrato-nombre"
+                                placeholder="Juan; Juan Mariano"
+                                required
+                              />
+                              <label for="contrato-nombre">Nombre</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="form-floating mb-3">
+                              <select
+                                class="form-select pt-2"
+                                aria-label="Default select example"
+                                name="contrato-tipo-documento"
+                                id="contrato-tipo-documento"
+                                required
+                              >
+                                <option
+                                  selected
+                                  disabled
+                                  value=""
+                                >
+                                  Tipo Documento
+                                </option>
+                                <option value="DNI">DNI</option>
+                                <option value="LE">LE</option>
+                                <option value="PASAPORTE">PASAPORTE</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="form-floating mb-3">
+                              <input
+                                type="number"
+                                class="form-control"
+                                name="contrato-documento"
+                                id="contrato-documento"
+                                placeholder="05950360;40350968"
+                                required
+                              />
+                              <label for="contrato-documento">Documento</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="form-floating mb-3">
+                              <input
+                                type="email"
+                                class="form-control"
+                                name="contrato-email"
+                                id="contrato-email"
+                                placeholder="name@example.com"
+                                required
+                              />
+                              <label for="contrato-email">Email</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="form-floating mb-3">
+                              <input
+                                type="number"
+                                class="form-control"
+                                name="contrato-telefono"
+                                id="contrato-telefono"
+                                placeholder="351-1324519;0351-151324519"
+                                required
+                              />
+                              <label for="contrato-telefono">Teléfono</label>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <hr />
+                      <fieldset class="mb-3">
+                        <legend>Dirección</legend>
+                        <div class="row">
+                          <div class="col-12 col-sm-6">
+                            <div class="form-floating mb-3">
+                              <select
+                                class="form-select pt-2"
+                                aria-label="Default select example"
+                                name="contrato-provincia"
+                                id="contrato-provincia"
+                                region="Provincia"
+                                required
+                              >
+                                <option
+                                  selected
+                                  disabled
+                                  value=""
+                                >
+                                  Provincia
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="form-floating mb-3">
+                              <select
+                                class="form-select pt-2"
+                                aria-label="Default select example"
+                                name="contrato-departamento"
+                                id="contrato-departamento"
+                                region="Departamento"
+                                disabled
+                                required
+                              >
+                                <option
+                                  selected
+                                  disabled
+                                  value=""
+                                >
+                                  Departamento
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="form-floating mb-3">
+                              <select
+                                class="form-select pt-2"
+                                aria-label="Default select example"
+                                name="contrato-localidad"
+                                id="contrato-localidad"
+                                region="Localidad"
+                                disabled
+                                required
+                              >
+                                <option
+                                  selected
+                                  disabled
+                                  value=""
+                                >
+                                  Localidad
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="form-floating mb-3">
+                              <select
+                                class="form-select pt-2"
+                                aria-label="Default select example"
+                                name="contrato-asentamiento"
+                                id="contrato-asentamiento"
+                                region="Barrio"
+                                disabled
+                                required
+                              >
+                                <option
+                                  selected
+                                  disabled
+                                  value=""
+                                >
+                                  Barrio
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="form-floating mb-3">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="contrato-calle"
+                                id="contrato-calle"
+                                placeholder="25 de Mayo"
+                                required
+                              />
+                              <label for="contrato-calle">Calle</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="form-floating">
+                              <div class="row">
+                                <div class="col-4">
+                                  <div class="form-floating mb-3">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      name="contrato-numero"
+                                      id="contrato-numero"
+                                      placeholder="123;3424;2322"
+                                      required
+                                    />
+                                    <label for="contrato-numero">Numero</label>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="form-floating mb-3">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      name="contrato-piso"
+                                      id="contrato-piso"
+                                      placeholder="1;A;1°Piso"
+                                    />
+                                    <label for="contrato-piso">Piso</label>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="form-floating mb-3">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      name="contrato-depto"
+                                      id="contrato-depto"
+                                      placeholder="1A;1;01"
+                                    />
+                                    <label for="contrato-depto">Depto</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div class="form-floating mb-3">
+                        <select
+                          class="form-select pt-2"
+                          aria-label="Default select example"
+                          id="contrato-calle"
+                          region="Calle"
+                          disabled
+                          required
+                        >
+                          <option selected>Calle</option>
+                        </select>
+                      </div> -->
+                        </div>
+                      </fieldset>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="reset"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button
+                        type="submit"
+                        class="btn btn-primary"
+                      >
+                        Mandar Solicitud
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="modal-preview"
+            aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1
+                    class="modal-title fs-5"
+                    id="exampleModalToggleLabel2"
+                  >
+                    Confirmación de los Datos y envió del formulario
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <h4>Datos</h4>
+                  <p class="fw-bold ps-5">
+                    Apellido:
+                    <span
+                      class="fw-normal"
+                      id="value-apellido"
+                    ></span>
+                  </p>
+                  <p class="fw-bold ps-5">
+                    Nombre:
+                    <span
+                      class="fw-normal"
+                      id="value-nombre"
+                    ></span>
+                  </p>
+                  <p class="fw-bold ps-5">
+                    Tipo Documento:
+                    <span
+                      class="fw-normal"
+                      id="value-tipo-documento"
+                    ></span>
+                  </p>
+                  <p class="fw-bold ps-5">
+                    Documento:
+                    <span
+                      class="fw-normal"
+                      id="value-documento"
+                    ></span>
+                  </p>
+                  <p class="fw-bold ps-5">
+                    Email:
+                    <span
+                      class="fw-normal"
+                      id="value-email"
+                    ></span>
+                  </p>
+                  <h4>Dirección</h4>
+                  <p class="fw-bold ps-5">
+                    Provincia:
+                    <span
+                      class="fw-normal"
+                      id="value-provincia"
+                    ></span>
+                  </p>
+                  <p class="fw-bold ps-5">
+                    Departamento:
+                    <span
+                      class="fw-normal"
+                      id="value-departamento"
+                    ></span>
+                  </p>
+                  <p class="fw-bold ps-5">
+                    Localidad:
+                    <span
+                      class="fw-normal"
+                      id="value-localidad"
+                    ></span>
+                  </p>
+                  <p class="fw-bold ps-5">
+                    Barrio:
+                    <span
+                      class="fw-normal"
+                      id="value-asentamiento"
+                    ></span>
+                  </p>
+                  <p class="fw-bold ps-5">
+                    Calle:
+                    <span
+                      class="fw-normal"
+                      id="value-calle"
+                    ></span>
+                  </p>
+                  <p class="fw-bold ps-5">
+                    Numero:
+                    <span
+                      class="fw-normal"
+                      id="value-numero"
+                    ></span>
+                  </p>
+                  <p class="fw-bold ps-5">
+                    Piso:
+                    <span
+                      class="fw-normal"
+                      id="value-piso"
+                    ></span>
+                  </p>
+                  <p class="fw-bold ps-5">
+                    Departamento:
+                    <span
+                      class="fw-normal"
+                      id="value-departamento"
+                    ></span>
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    id="btn-cancelar-envio-formulario-contrato"
+                    class="btn btn-danger"
+                    data-bs-target="#modal-contrato"
+                    data-bs-toggle="modal"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancelar
+                  </button>
+                  <button
+                    id="btn-descargar-envio-formulario-contrato"
+                    type="button"
+                    class="btn btn-success"
+                  >
+                    Descargar
+                  </button>
+                  <button
+                    id="btn-confirmar-envio-formulario-contrato"
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-envio-contrato-completado"
+                  >
+                    Confirmar Envió
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="modal-descarga-completa"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title"
+                    id="modalTitleId"
+                  >
+                    Descarga Completa
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <span><i class="las la-arrow-circle-down text-success"></i></span>
+                  <span>El archivo se ha descargado correctamente.</span>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    data-bs-dismiss="modal"
+                  >
+                    Aceptar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="modal-envio-contrato-completado"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="modalTitleId"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title"
+                    id="modalTitleId"
+                  >
+                    Envio Completo
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <span><i class="las la-check-circle text-success"></i></span>
+                  <span> Se ha enviado el formulario correctamente. </span>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    data-bs-dismiss="modal"
+                  >
+                    Aceptar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--------FIN PRIMERA SECCIÓN PRODUCTOS------------------>
+        <!------------SEGUNDA SECCIÓN DUDAS------------------>
+
+        <section
+          id="dudas"
+          class="rounded-4"
+        >
+          <div class="px-2 py-3 p-sm-5 mb-4">
+            <div class="container-fluid text-center">
+              <p class="fw-semibold fst-italic">
+                No esperes más, obtené la conexión más rapida y te congelamos el precio por 12
+                meses...
+              </p>
+              <p class="fs-2">¡Si tenés dudas!</p>
+              <a href="#contacto"><button class="btn btn-primary">Contactate</button></a>
+            </div>
+          </div>
+        </section>
+
+        <!--------FIN SEGUNDA SECCIÓN DUDAS------------------>
+        <!------------TERCERA SECCIÓN QUIENES SOMOS------------------>
+
+        <section
+          id="quienes-somos"
+          class="rounded-4"
+        >
+          <div class="px-2 py-3 p-sm-5 mb-4">
+            <div class="container-fluid">
+              <h2 class="fs-1 fw-bold text-center">¿Quienes somos?</h2>
+              <p class="fs-5 text-center">
+                Somos una empresa, que ha logrado un éxito significativo en la industria de
+                internet. Fundada en 2010, nos hemos enfocado en ofrecer los mejores servicios de
+                internet mediante fibra optica, la cual incrementa y mejora significativamente la
+                transmisión de datos en redes de telecomunicaciones.
+              </p>
+              <p class="fs-5 text-center">
+                A través de nuestro enfoque en la calidad del servicio, la atención al cliente y la
+                eficiencia operativa, hemos podido expandir nuestra presencia globalmente y hemos
+                obtenido numerosos premios y reconocimientos en la industria.
+              </p>
+              <p class="fs-5 text-center fw-bold fst-italic">
+                Seguimos comprometidos con innovar y brindar soluciones de vanguardia a nuestros
+                clientes.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!--------FIN TERCERA SECCIÓN QUIENES SOMOS------------------>
+        <!------------CUARTA SECCIÓN EQUIPO------------------>
+
+        <section
+          id="equipo"
+          class="rounded-4"
+        >
+          <div class="px-2 py-3 p-sm-5 mb-4">
+            <div class="container-fluid">
+              <h2 class="fs-1 fw-bold text-center">Nuestro equipo</h2>
+              <div
+                id="listado-equipo"
+                class="d-flex flex-wrap justify-content-center align-items-center"
+              >
+                <!-- Aca van los integrantes del equipo -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--------FIN CUARTA SECCIÓN EQUIPO------------------>
+        <!------------QUINTA SECCIÓN CONTACTO------------------>
+
+        <section
+          id="contacto"
+          class="rounded-4"
+        >
+          <div class="px-2 py-3 p-sm-5 mb-4">
+            <div class="container-fluid">
+              <h2 class="fs-1 fw-bold text-center">Contacto</h2>
+              <div class="d-flex r">
+                <form
+                  id="form-contacto"
+                  class="d-flex flex-column gap-4 align-items-center align-items-center"
+                >
+                  <div
+                    class="w-100 d-flex flex-column-reverse flex-md-row align-items-center gap-4"
+                  >
+                    <div class="w-100 h-100">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="contacto-nombre"
+                          id="contacto-nombre"
+                          placeholder="Pérez"
+                          required
+                        />
+                        <label for="contacto-nombre">Nombre</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="contacto-apellido"
+                          id="contacto-apellido"
+                          placeholder="Hernández"
+                          required
+                        />
+                        <label for="floatingInput">Apellido</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="contacto-email"
+                          id="contacto-email"
+                          placeholder="name@example.com"
+                          required
+                        />
+                        <label for="contacto-email">Email</label>
+                      </div>
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          placeholder="Deja tu mensaje aquí"
+                          name="contacto-mensaje"
+                          id="contacto-mensaje"
+                          style="height: 100px"
+                          required
+                        ></textarea>
+                        <label for="contacto-mensaje">Mensaje</label>
+                      </div>
+                    </div>
+                    <div class="w-100 h-100">
+                      <img
+                        class="w-100 h-100"
+                        src="img/contacto.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <button
+                    id="btn-enviar-contacto"
+                    type="submit"
+                    class="btn btn-primary w-50"
+                  >
+                    Envió
+                  </button>
+                  <div
+                    class="modal fade"
+                    id="modal-contacto"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalCenterTitle"
+                    style="display: none"
+                    aria-hidden="true"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5"
+                            id="exampleModalCenterTitle"
+                          >
+                            Confirmacion del Envio
+                          </h1>
+                          <button
+                            type="submit"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Confirmar el envió del formulario de contacto</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            id="btn-cancelar-envio-formulario-contacto"
+                            type="button"
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                          >
+                            Cancelar
+                          </button>
+                          <button
+                            id="btn-confirmar-envio-formulario-contacto"
+                            type="button"
+                            class="btn btn-primary"
+                          >
+                            Confirmar Envió
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--------FIN QUINTA SECCIÓN CONTACTO------------------>
+        <!------------SEXTA SECCIÓN OPINIONES------------------>
+
+        <section
+          id="opiniones"
+          class="rounded-4"
+        >
+          <div class="px-2 py-3 p-sm-5 mb-4">
+            <div class="container-fluid">
+              <h2 class="text-center text-black">Que dicen nuestros clientes</h2>
+              <p class="lead text-center">Con clientes felices, nostros estamos aun más felices</p>
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                  <div class="card bg-light">
+                    <div class="card-body text-center">
+                      <img
+                        src="https://randomuser.me/api/portraits/men/10.jpg"
+                        alt=""
+                        class="rounded-circle mb-3"
+                      />
+                      <h3 class="card-title mb-3">Juan Perez</h3>
+                      <p class="card-text">
+                        "En un primer momento, no me sentia muy convencido de lo que ofrecia la
+                        empresa, teniendo en cuenta experiencias previas con otras empresas de
+                        internet. Despues de probar el servicio, hoy la recomiendo!"
+                      </p>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card bg-light">
+                    <div class="card-body text-center">
+                      <img
+                        src="https://randomuser.me/api/portraits/women/10.jpg"
+                        alt=""
+                        class="rounded-circle mb-3"
+                      />
+                      <h3 class="card-title mb-3">Maria Perez</h3>
+                      <p class="card-text">
+                        "Realmente cumplen con lo que dicen. Me cambio la vida, al hacer home-office
+                        ya no tengo que renegar con la lentitud y perdidas de conexión, ya no tengo
+                        perdidas de tiempo..."
+                      </p>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card bg-light">
+                    <div class="card-body text-center">
+                      <img
+                        src="https://randomuser.me/api/portraits/men/9.jpg"
+                        alt=""
+                        class="rounded-circle mb-3"
+                      />
+                      <h3 class="card-title mb-3">Carlos Gimenez</h3>
+                      <p class="card-text">
+                        "Exelente servicio, llevo varios meses como cliente, y nunca más tuve
+                        problemas de conexión, ya no tengo que esperar más a que carguen ciertas
+                        paginas."
+                      </p>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card bg-light">
+                    <div class="card-body text-center">
+                      <img
+                        src="https://randomuser.me/api/portraits/women/9.jpg"
+                        alt=""
+                        class="rounded-circle mb-3"
+                      />
+                      <h3 class="card-title mb-3">Clara Martinez</h3>
+                      <p class="card-text">
+                        "Estoy verdaderamente sorprendida. Uso mucho internet, me encanta mirar
+                        series y peliculas, y ya no tengo que esperar para poder empezar la
+                        reproducción, no se traba. ni se corta, puedo disfrutar cada momento..."
+                      </p>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                      <i class="bi bi-star-fill mx-1"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-star-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          /></svg
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--------FIN SEXTA SECCIÓN OPINIONES------------------>
+      </div>
+    </main>
+    <!----------------------FOOTER----------------------------->
+    <!--------------PRIMER SECCIÓN FOOTER---------------------->
+    <footer>
+      <section
+        id="footer-1"
+        class="rounded-4"
+      >
+        <div class="px-2 py-3 p-sm-5 mb-4">
+          <div class="container-fluid">
+            <div class="row container__footer">
+              <div class="col-6 col-md-2 mb-3">
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a
+                      href="#inicio"
+                      class="nav-link p-0 text-body-secondary fw-bolder"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="#productos"
+                      class="nav-link p-0 text-body-secondary fw-bolder"
+                      >Productos</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="#quienessomos"
+                      class="nav-link p-0 text-body-secondary fw-bolder"
+                      >Quines Somos</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-2 mb-3">
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a
+                      href="#equipo"
+                      class="nav-link p-0 text-body-secondary fw-bolder"
+                      >Nuestro Equipo</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="#contacto"
+                      class="nav-link p-0 text-body-secondary fw-bolder"
+                      >Contacto</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="#"
+                      class="nav-link p-0 text-body-secondary fw-bolder"
+                      >Términos y Condiciones</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-7 offset-md-1 mb-3">
+                <form>
+                  <h5 class="fw-bold">Subscribite para recibir nuestras noticias</h5>
+                  <p>
+                    Recibí nuestro resumen de lo nuevo y emocionantes ofertas, promociones y
+                    descuentos.
+                  </p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label
+                      for="newsletter1"
+                      class="visually-hidden"
+                      >Email</label
+                    >
+                    <input
+                      id="newsletter1"
+                      type="text"
+                      class="form-control"
+                      placeholder="Email address"
+                      required
+                    />
+                    <button
+                      class="btn btn-primary"
+                      type="button"
+                    >
+                      Subscribite!
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----------FIN PRIMER SECCIÓN FOOTER---------------------->
+      <!-------------SEGUNDA SECCIÓN FOOTER---------------------->
+      <section
+        id="footer-2"
+        class="rounded-4"
+      >
+        <div class="px-2 py-3 p-sm-5 mb-4">
+          <p class="text-center fst-normal text-decoration-underline fs-5">
+            Seguinos en las redes:
+          </p>
+          <div class="d-flex justify-content-center flex-wrap mx-5 mb-2 gap-2">
+            <!-- <img src="https://img.icons8.com/clouds/100/null/facebook-new.png" />
+            <img src="https://img.icons8.com/clouds/100/null/twitter-circled.png" />
+            <img src="https://img.icons8.com/clouds/100/null/instagram-new--v1.png" />
+            <img src="https://img.icons8.com/clouds/100/000000/whatsapp.png" />
+            -->
+            <a
+              class="red-social"
+              href="#"
+              ><i class="lab la-facebook-f"></i
+            ></a>
+            <a
+              class="red-social"
+              href="#"
+              ><i class="lab la-twitter"></i
+            ></a>
+            <a
+              class="red-social"
+              href="#"
+              ><i class="lab la-instagram"></i
+            ></a>
+            <a
+              class="red-social"
+              href="#"
+              ><i class="lab la-whatsapp"></i
+            ></a>
+          </div>
+          <div class="border-top text-center pt-3">
+            <p>
+              © 2023 Conexión Total, Inc. - Todos los Derechos Reservados - All rights reserved -
+              Desarrollado por Equipo 4 -Argentina Programa.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!---------FIN SEGUNDA SECCIÓN FOOTER---------------------->
+    </footer>
+    <!------------------FIN FOOTER----------------------------->
+  </body>
+</html>
